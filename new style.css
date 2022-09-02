@@ -1,0 +1,40 @@
+h1{
+  font-size:45px;
+  text-align:center;
+  border-bottom:1px solid gray;
+  margin:0;
+  padding:20px;
+}
+a{
+  color:blue;
+  text-decoration:none;
+}
+body{
+  margin:0;
+}
+#grid #article{
+  padding:20px;
+}
+#grid{
+  display:grid;
+  grid-template-columns:150px 1fr;
+}
+#grid ul{
+  border-right:1px solid gray;
+  margin:0;
+  padding-top:5px;
+}
+#grid #article ul{
+  border-right:0;
+}
+@media(max-width:600px){
+  #grid{
+    display:block;
+  }
+  #grid ul{
+    border-right:none;
+  }
+  h1{
+    border-bottom:none;
+  }
+}
